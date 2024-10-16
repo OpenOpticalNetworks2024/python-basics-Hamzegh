@@ -53,7 +53,18 @@ def exercise3():
 
 # ex4
 def exercise4():
-    pass
+    print("Insert a set of numbers with space in between.\n")
+    var1 = input()
+    var1 = var1.split()
+    lst1 = []
+    for i in var1:
+        try:
+            if float(i)%5 == 0:
+                print(float(i))
+        except:
+            print(f"{i} is not a number :/ try again")
+            return exercise4()
+
 
 
 # ex5
