@@ -9,17 +9,46 @@ import matplotlib as plt
 
 # ex1
 def exercise1():
-    pass
+    var1 = int(input("First Num: "))
+    var2 = int(input("Second Num: "))
+    var_mult = var1*var2
+    if var_mult<1000:
+        return var_mult
+    else:
+        return var1+var2
+
 
 
 # ex2
 def exercise2():
-    pass
+    var1 = int(input("The range is: "))
+    j=0
+    for i in range(var1):
+        print(f"{i}th number sum with previous ({j}) is: {i+j}")
+        j=i
+    return
 
 
 # ex3
 def exercise3():
-    pass
+    print("start to input the list.")
+    print("enter anything rather than int num to cast out.")
+    lst1 = list()
+    i = 1
+    while True:
+        var1 = input(f"element {i}: ")
+        i += 1
+        try:
+            var1 = int(var1)
+            lst1.append(var1)
+        except:
+            print(lst1)
+            break
+    if lst1[0] == lst1[-1]:
+        return True
+    else:
+        return False
+
 
 
 # ex4
